@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!--xml版本及编码信息-->
+<!--pom文件默认配置头,一般不需要关注-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--项目的简要信息-->
+	<!--项目所在分组,用于maven管理的信息区分-->
+	<groupId>com.bcdbook</groupId>
+	<!--对应maven管理中项目品类id,一般为项目名-->
+	<artifactId>spring-boot-groundwork</artifactId>
+	<!--项目的版本-->
+	<version>0.0.1-SNAPSHOT</version>
+	<!--项目打包生成的包类型,此处为jar包,也有的会打成war包-->
+	<packaging>jar</packaging>
+
+	<!--项目名称-->
+	<name>spring-boot-groundwork</name>
+	<!--项目简介-->
+	<description>SpringBoot groundwork</description>
+
+	<!--springboot父级基础依赖包-->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!--依赖包的版本-->
+		<version>1.5.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<!--项目源代码的编码和所选的java的版本-->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<!--java的版本-->
+		<java.version>1.8</java.version>
+	</properties>
+
+	<!--依赖的jar包-->
+	<dependencies>
+		<!--aop相关jar包,处理切面相关事务-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+		<!--thymeleaf模板引擎,处理页面返回时的模板驱动及部分的数据传输-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!--web项目的基础jar包-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!--测试模块，包括JUnit、Hamcrest、Mockito-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<!--maven编译的相关配置-->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
