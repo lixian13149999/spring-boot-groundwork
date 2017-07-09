@@ -19,6 +19,7 @@ spring:
 #      password: Java1231
 #      driver-class-name: com.mysql.jdbc.Driver
 
+
   #数据库jpa的配置
   jpa:
 #    hibernate:
@@ -60,15 +61,6 @@ spring:
 logging:
   file: /Users/lason/Downloads/test.log
 
-summer:
-  name: lason
-  age: 15
-
-lason:
-  username: lixian
-  password: 123123
-
-  
 sex: 男
 age: 18
 person: "sex: ${sex}, age: ${age}"
