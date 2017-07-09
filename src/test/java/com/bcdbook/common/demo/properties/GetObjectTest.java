@@ -12,19 +12,19 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class GetParameterTest {
+public class GetObjectTest {
 
     //注入参数,用于从中获取配置内容
     @Autowired
-    private GetParameter getParameter;
+    private GetObject getObject;
 
     @Test
-    public void getParameter(){
-        int age = getParameter.getAge();
-        String sex = getParameter.getSex();
+    public void getObject(){
+        int age = getObject.getTom().getAge();
+        String sex = getObject.getTom().getSex();
 
-        Assert.assertEquals("返回值不正确",16,age);
-        Assert.assertEquals("返回值不正确","女",sex);
+        Assert.assertEquals("返回值不正确",18,age);
+        Assert.assertEquals("返回值不正确","男",sex);
 
     }
 }

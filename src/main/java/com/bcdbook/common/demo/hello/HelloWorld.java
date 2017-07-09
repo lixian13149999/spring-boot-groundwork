@@ -45,4 +45,6 @@ public class HelloWorld {
     public String helloTemplates(){
         return "demo/hello/helloTemplate";
     }
+
+
 }

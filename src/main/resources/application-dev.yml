@@ -60,10 +60,3 @@ spring:
 #日志文件的配置
 logging:
   file: /Users/lason/Downloads/test.log
-
-sex: 男
-age: 18
-person: "sex: ${sex}, age: ${age}"
-people:
-  sex: 女
-  age: 16

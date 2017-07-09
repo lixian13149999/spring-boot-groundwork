@@ -17,9 +17,16 @@ public class GetParameter {
     @Value("${age}")
     private int age;
 
+    /**
+     * 空参构造
+     */
     public GetParameter() {
     }
 
+    /**
+     * getter and setter
+     * @return
+     */
     public String getSex() {
         return sex;
     }
