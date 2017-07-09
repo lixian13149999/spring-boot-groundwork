@@ -11,5 +11,5 @@ server:
 spring:
   profiles:
     #这里选取对应附属的配置文件
-    active: parameter
+    active: dev
 

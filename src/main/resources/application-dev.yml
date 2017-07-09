@@ -7,7 +7,7 @@ spring:
   #数据库的配置
   primary:
     datasource:
-      url: jdbc:mysql://106.15.38.240:3306/spring_boot_base?useUnicode=true&characterEncoding=UTF-8
+      url: jdbc:mysql://106.15.38.240:3306/groundwork?useUnicode=true&characterEncoding=UTF-8
       username: java
       password: Java1231
       driver-class-name: com.mysql.jdbc.Driver
