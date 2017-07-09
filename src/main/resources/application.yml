@@ -1,0 +1,15 @@
+#项目的核心配置文件,这里几乎可以配置SpringBoot框架中的所有内容
+
+#服务器的相关配置
+server:
+  #设定端口为8888
+  port: 8888
+  #设置项目的路径
+#  context-path: /groundwork
+
+#spring的相关配置开始
+spring:
+  profiles:
+    #这里选取对应附属的配置文件
+    active: parameter
+

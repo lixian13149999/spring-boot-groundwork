@@ -1,0 +1,6 @@
+sex: 女
+age: 16
+lily: "sex: {sex}, age: {age}"
+tom:
+  sex: 男
+  age: 18

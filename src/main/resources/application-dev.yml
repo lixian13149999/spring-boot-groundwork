@@ -1,0 +1,77 @@
+#开发环境下的配置文件
+spring:
+  http:
+    multipart:
+      maxFileSize : 10Mb
+      maxRequestSize : 50Mb
+  #数据库的配置
+  primary:
+    datasource:
+      url: jdbc:mysql://106.15.38.240:3306/spring_boot_base?useUnicode=true&characterEncoding=UTF-8
+      username: java
+      password: Java1231
+      driver-class-name: com.mysql.jdbc.Driver
+      
+#  secondary:
+#    datasource:
+#      url: jdbc:mysql://106.15.38.240:3306/spring_boot_test?useUnicode=true&characterEncoding=UTF-8
+#      username: java
+#      password: Java1231
+#      driver-class-name: com.mysql.jdbc.Driver
+
+  #数据库jpa的配置
+  jpa:
+#    hibernate:
+#      ddl-auto: create
+    show-sql: true
+
+  #模板引擎的配置
+  thymeleaf:
+    #关闭缓存,页面修改后会立即生效
+    cache: false
+
+
+  #开发者工具的相关配置
+#  devtools:
+#    restart:
+#      additional-paths: src/main
+
+  #邮件的相关配置
+#  mail:
+#      host: smtp.163.com
+#      username: xianforwork@163.com
+#      password: li95287048
+#      properties:
+#        mail:
+#          smtp:
+#            auth: true
+#          starttls:
+#            enable: true
+#            required: true
+
+
+#audience:
+#  clientId: 098f6bcd4621d373cade4e832627b4f5
+#  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
+#  name: restapiuser
+#  expiresSecond: 17800
+
+#日志文件的配置
+logging:
+  file: /Users/lason/Downloads/test.log
+
+summer:
+  name: lason
+  age: 15
+
+lason:
+  username: lixian
+  password: 123123
+
+  
+sex: 男
+age: 18
+person: "sex: ${sex}, age: ${age}"
+people:
+  sex: 女
+  age: 16
