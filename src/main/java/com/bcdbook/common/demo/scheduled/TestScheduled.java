@@ -1,4 +1,4 @@
-package com.bcdbook.common.scheduled;
+package com.bcdbook.common.demo.scheduled;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

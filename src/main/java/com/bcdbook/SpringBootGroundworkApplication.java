@@ -2,7 +2,6 @@ package com.bcdbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  *
@@ -15,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 /*
  * 用于启用定时器的注解
  */
-@EnableScheduling
+//@EnableScheduling
 public class SpringBootGroundworkApplication {
 
 	/**
