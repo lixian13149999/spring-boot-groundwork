@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * 表明这是一个配置文件类
  */
 @Configuration
-public class WebApplicationAdapter extends WebMvcConfigurerAdapter {
+public class WebApplicationConfig extends WebMvcConfigurerAdapter {
     /**
      * 重写添加拦截器的方法
      * @param registry

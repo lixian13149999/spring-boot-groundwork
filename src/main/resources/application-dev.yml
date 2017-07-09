@@ -11,6 +11,13 @@ spring:
       username: java
       password: Java1231
       driver-class-name: com.mysql.jdbc.Driver
+
+  #开发者工具的相关配置
+  devtools:
+      restart:
+        enabled: true #是否开启开发者工具（true/false）
+        additional-paths: src/main/java
+        exclude: static/**
       
 #  secondary:
 #    datasource:
