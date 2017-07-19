@@ -11,3 +11,5 @@ readme file to test upload
 * hotfix分支：代码的紧急修复工作
 
 当前状态是develop,测试默认提交时所达的分支
+
+当前状态是develop, 提交时选择master测试效果
